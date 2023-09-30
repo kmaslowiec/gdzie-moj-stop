@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.kapt3.base.Kapt.kapt
-
 plugins {
     kotlin("kapt")
     id("com.android.application")
@@ -11,6 +9,12 @@ plugins {
 android {
     namespace = "com.example.gdziemojstop"
     compileSdk = 34
+
+    sourceSets {
+        getByName("main") {
+            java.srcDir("src/main/kotlin")
+        }
+    }
 
     defaultConfig {
         applicationId = "com.example.gdziemojstop"
