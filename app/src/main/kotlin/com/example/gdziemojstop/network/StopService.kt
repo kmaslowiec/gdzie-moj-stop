@@ -1,6 +1,7 @@
 package com.example.gdziemojstop.network
 
 import com.example.gdziemojstop.model.Stop
+import retrofit2.Response
 import retrofit2.http.GET
 import javax.inject.Singleton
 
@@ -8,5 +9,5 @@ import javax.inject.Singleton
 interface StopService {
 
     @GET("stops")
-    suspend fun getStops(): Stop
+    suspend fun getStops(): Response<Stop>
 }
