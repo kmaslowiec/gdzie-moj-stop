@@ -1,7 +1,7 @@
-package com.example.gdziemojstop.di
+package com.example.gdziemojstop.common.di
 
-import com.example.gdziemojstop.component.api.ApiConstants
-import com.example.gdziemojstop.network.StopService
+import com.example.gdziemojstop.api.StopApi
+import com.example.gdziemojstop.common.ApiConstants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,10 +15,10 @@ import javax.inject.Singleton
 object AppModule {
     @Singleton
     @Provides
-    fun provideQuestionApi(): StopService = Retrofit.Builder()
+    fun provideQuestionApi(): StopApi = Retrofit.Builder()
         .baseUrl(ApiConstants.BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
-        .create(StopService::class.java)
+        .create(StopApi::class.java)
 
 }

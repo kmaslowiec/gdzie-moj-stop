@@ -1,10 +1,10 @@
-package com.example.gdziemojstop.screen
+package com.example.gdziemojstop.stops.viewmodel
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.gdziemojstop.network.NetworkResult
-import com.example.gdziemojstop.repository.StopRepository
+import com.example.gdziemojstop.api.NetworkResult
+import com.example.gdziemojstop.stops.repository.StopRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
