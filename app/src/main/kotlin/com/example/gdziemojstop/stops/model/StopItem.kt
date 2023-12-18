@@ -1,4 +1,4 @@
-package com.example.gdziemojstop.model
+package com.example.gdziemojstop.stops.model
 
 data class StopItem(
     val id: Int,
