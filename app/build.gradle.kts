@@ -76,6 +76,7 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("io.coil-kt:coil-compose:2.4.0")
     implementation("com.google.dagger:hilt-android:2.51")
+    implementation ("androidx.datastore:datastore-preferences:1.1.1")
     kapt("com.google.dagger:hilt-android-compiler:2.51")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.2.1")
